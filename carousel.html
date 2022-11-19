@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+      <!-- icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    </head>
+
+<body class="grey lighten-4">       
+    <nav class="pink lighten-1">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center"> ANYA-CAKE</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <a href="#!" class="brand-logo center">ANYA-CAKE</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">HOME<i class="large material-icons left">home</i></a></li>
+            <li><a href="badges.html">Help<i class="large material-icons left">help</i></a></li>
+            <li class="active"><a href="collapsible.html">Feedback<i class="large material-icons left">feedback</i></a></a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+      </div>
+    </nav>
+       
+  <!-- side bar structure -->
+
+  <ul id="slide-out" class="sidenav pink lighten-3">
+    <li>
+      <div class="user-view">
+      <div class="background">
+        <img src="bg-cake.jpg">
+      </div>
+        <a href="#user"><img class="circle" src="anya.jpg"></a>
+        <a href="#name"><span class="yellow-text name">ANYA-CAKE</span></a>
+        <a href="#email"><span class="yellow-text email">Bake me a cake</span></a>
+      </div>
+    </li>
+      <li>
+        <a href="bakingtutorials.html"><i class="material-icons">content_paste</i>BAKING TUTORIALS</a>
+      </li>
+      <li>
+        <a href="sidenav.html"><i class="material-icons">people</i>TEAM</a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a class="subheader">RECIPES</a>
+      </li>
+      <li class="active">
+        <a class="waves-effect" href="carousel.html"><i class="material-icons">card_giftcard</i>CUP CAKE</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#!"><i class="material-icons">cake</i>CAKE</a>
+      </li>
+  </ul>
+
+  <!-- CAROUSEEL -->
+  <div class="container">
+    <h1 class="gill1 pink-text text-pink lighten-2">CUPCAKE CAROUSEL</h1>
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="c1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="c2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="c3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="c4.png"></a>
+    </div>
+   </div>
+
+ 
+
+
+    <script>
+       $(document).ready(function(){
+           $('.dropdown-trigger').dropdown();
+         });
+
+         $(document).ready(function(){
+              $('.fixed-action-btn').floatingActionButton({
+                direction: 'up'
+              });
+        });
+
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function(){
+          $('.slider').slider();
+        });
+
+        $(document).ready(function(){
+          $('.materialboxed').materialbox();
+        });
+
+        // carousel
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                duration: 500
+            });
+        });
+        
+    
+    </script>
+
+</body>
+</html>
